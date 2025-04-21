@@ -9,17 +9,17 @@ using namespace std;
 double Cylinder :: SurfaceArea(){
     
     return     
-        2*radius*radius*M_PI + 2*M_PI*radius*height;
+        1.0*2*radius*radius*M_PI + 2*M_PI*radius*height;
 }
 
 double Cylinder :: Volume(){
 
-    return M_PI*radius*radius*height;
+    return 1.0*M_PI*radius*radius*height;
 }
 
 double Cylinder :: Circumference(){
 
-    return 2*M_PI*radius;
+    return 1.0*2*M_PI*radius;
 }
 
 istream & operator>>(istream & in, Cylinder & cldr)
